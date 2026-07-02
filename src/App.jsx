@@ -6,7 +6,7 @@ import LOGO from './assets/Logo.jpg';
 export default function App() {
   const links = {
     whatsapp: 'https://chat.whatsapp.com/HfsxgeRo1EB4EYS87fi2wx',
-    telegram: 'https://t.me/+g1uc2fbEj5U5NzJhhttps://t.me/+g1uc2fbEj5U5NzJh',
+    telegram: 'https://t.me/+6c83r0TT2XxkZDAx',
     instagram: 'https://www.instagram.com/sgpromocoeseachadinhos?igsh=OTV6dXZlOTB0Z3Zh&utm_source=qr'
   };
 
