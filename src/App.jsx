@@ -1,4 +1,4 @@
-import { MessageCircle, Send, Camera, CheckCircle2, ChevronRight, Sparkles } from 'lucide-react';
+import { MessageCircle, CheckCircle2, ChevronRight, Sparkles } from 'lucide-react';
 import './App.css';
 
 import LOGO from './assets/Logo.jpg';
@@ -6,10 +6,15 @@ import LOGO from './assets/Logo.jpg';
 export default function App() {
   const links = {
     whatsapp: 'https://chat.whatsapp.com/HfsxgeRo1EB4EYS87fi2wx',
-    telegram: 'https://t.me/+6c83r0TT2XxkZDAx',
-    instagram: 'https://www.instagram.com/sgpromocoeseachadinhos?igsh=OTV6dXZlOTB0Z3Zh&utm_source=qr'
   };
 
+  const marketLogos = {
+    mercadolivre: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Mercado_Livre_wordmark_(Portuguese_version).svg',
+    amazon: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
+    shein: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Shein_Logo_2017.svg',
+    shopee: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopee_logo.svg'
+  };
+ 
   return (
     <div className="container-page">
       <main className="main-content">
@@ -20,7 +25,7 @@ export default function App() {
             <img src={LOGO} alt="Logo" className="logo-image" />
           </div>
 
-          <h1 className="title">Entre agora no grupo de ofertas</h1>
+          <h1 className="title">Entre no maior  grupo de Promoções do brasil</h1>
           <p className="subtitle">
             Receba cupons reais, descontos relâmpago e oportunidades exclusivas em tempo real, direto no seu celular.
           </p>
@@ -37,7 +42,7 @@ export default function App() {
           </div>
         </section>
 
-        <div className="links-group">
+          <div className="links-group">
           <a href={links.whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp primary-action">
             <div className="btn-content">
               <MessageCircle className="icon" />
@@ -48,29 +53,21 @@ export default function App() {
             </div>
             <ChevronRight className="arrow-icon" />
           </a>
-
           <div className="secondary-links">
-            <a href={links.telegram} target="_blank" rel="noopener noreferrer" className="btn btn-telegram">
-              <div className="btn-content">
-                <Send className="icon" />
-                <div className="btn-text">
-                  <span className="badge badge-telegram">Alternativo</span>
-                  <span className="btn-label">Canal no Telegram</span>
-                </div>
+            <div className="market-logos">
+              <div className="market-link">
+                <img src={marketLogos.mercadolivre} alt="Mercado Livre" className="market-logo" />
               </div>
-              <ChevronRight className="arrow-icon" />
-            </a>
-
-            <a href={links.instagram} target="_blank" rel="noopener noreferrer" className="btn btn-instagram">
-              <div className="btn-content">
-                <Camera className="icon" />
-                <div className="btn-text">
-                  <span className="badge badge-instagram">Novidades</span>
-                  <span className="btn-label">Siga no Instagram</span>
-                </div>
+              <div className="market-link">
+                <img src={marketLogos.amazon} alt="Amazon" className="market-logo" />
               </div>
-              <ChevronRight className="arrow-icon" />
-            </a>
+              <div className="market-link">
+                <img src={marketLogos.shein} alt="Shein" className="market-logo" />
+              </div>
+              <div className="market-link">
+                <img src={marketLogos.shopee} alt="Shopee" className="market-logo" />
+              </div>
+            </div>
           </div>
         </div>
 
